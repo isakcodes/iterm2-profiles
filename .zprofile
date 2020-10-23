@@ -36,3 +36,7 @@ function mkcd() {
 	mkdir $1 && cd $1
 }
 
+# Copy to clipboard
+function copy() {
+	pbcopy < $1
+}
