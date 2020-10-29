@@ -36,7 +36,7 @@ function mkcd() {
 	mkdir $1 && cd $1
 }
 
-# Copy to clipboard
+# Copy to clipboard without trailing whitespace
 function copy() {
-	pbcopy < $1
+	echo -n `cat $1` | pbcopy
 }
